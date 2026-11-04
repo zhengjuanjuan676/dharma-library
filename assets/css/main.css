@@ -17,15 +17,15 @@
 }
 
 html[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #151310;
-  --bg-elev: #1d1a16;
-  --text: #e9e3d7;
-  --muted: #a49a8b;
-  --border: #332d25;
-  --accent: #c99a6b;
-  --accent-soft: #2a241d;
-  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px rgba(0, 0, 0, .28);
+  color-scheme: light;
+  --bg: #ece5d8;
+  --bg-elev: #f3ede2;
+  --text: #2a251f;
+  --muted: #6d6356;
+  --border: #d7ccbb;
+  --accent: #6f4329;
+  --accent-soft: #e0d3c1;
+  --shadow: 0 1px 2px rgba(60, 50, 38, .06), 0 10px 30px rgba(60, 50, 38, .08);
 }
 
 /* ---------- reset ---------- */
