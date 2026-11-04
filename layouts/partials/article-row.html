@@ -1,18 +1,5 @@
 <article class="row">
   <a class="row-link" href="{{ .RelPermalink }}">
-    <div class="row-body">
-      <div class="row-meta">
-        {{ with .CurrentSection }}<span>{{ .Title }}</span>{{ end }}
-        <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2006-01-02" }}</time>
-        <span>{{ .ReadingTime }} 分钟</span>
-      </div>
-      <h3>{{ .Title }}</h3>
-      <p>{{ .Summary | plainify | truncate 110 }}</p>
-    </div>
-    {{ with .Params.tags }}
-    <div class="row-tags">
-      {{ range first 3 . }}<span>#{{ . }}</span>{{ end }}
-    </div>
-    {{ end }}
+    <h3>{{ .Title }}</h3>
   </a>
 </article>
