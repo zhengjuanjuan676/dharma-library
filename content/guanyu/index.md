@@ -7,5 +7,5 @@ author: "编辑部"
 excludeFromList: true
 ---
 
-一个只读的佛法共学文库。适合慢慢读。
+佛法文库，适合慢慢读。
 
