@@ -41,5 +41,3 @@ source: "参考《修习止观坐禅法要》，CBETA, T46, no. 1915。"
 
 ## 延伸阅读
 
-- [如何开始学佛]({{< relref "/rumen/ruhe-kaishi-xuefo.md" >}})
-- [五蕴与空]({{< relref "/jinglun/wuyun-yu-kong.md" >}})
