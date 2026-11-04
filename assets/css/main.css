@@ -877,3 +877,15 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .article .prose li p {
   text-indent: 0;
 }
+.article-views {
+  margin-top: .9rem;
+  color: var(--muted);
+  font-size: .82rem;
+  letter-spacing: .02em;
+}
+
+.article-views span {
+  color: var(--accent);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
