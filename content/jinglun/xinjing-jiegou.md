@@ -34,5 +34,4 @@ source: "《般若波罗蜜多心经》，CBETA, T08, no. 251。"
 
 ##  
 
-- [五蕴与空：从“我”到“只是条件”]({{< relref "/jinglun/wuyun-yu-kong.md" >}})
-- [如何开始学佛]({{< relref "/rumen/ruhe-kaishi-xuefo.md" >}})
+
