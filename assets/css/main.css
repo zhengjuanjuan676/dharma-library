@@ -863,3 +863,17 @@ html[data-theme="dark"] .icon-moon { display: block; }
   .prose { font-size: 11pt; line-height: 1.7; }
   .prose a { color: #000; text-decoration: none; }
 }
+/* 中文正文：段首缩进两字，段间距收紧 */
+.article .prose p {
+  text-indent: 2em;
+}
+
+.article .prose p + p {
+  margin-top: 1em;
+}
+
+/* 引用和列表里的段落不缩进 */
+.article .prose blockquote p,
+.article .prose li p {
+  text-indent: 0;
+}
