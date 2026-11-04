@@ -5,10 +5,7 @@
       <p class="footer-note">本站为只读文库。</p>
     </div>
     <div class="footer-links">
-      <a href="{{ "index.xml" | relURL }}">RSS</a>
-      <a href="{{ "guanyu/" | relURL }}">关于</a>
-      <a href="{{ "tags/" | relURL }}">标签</a>
-      {{ with site.Params.email }}<a href="mailto:{{ . }}">来信</a>{{ end }}
+    
     </div>
     <p class="copyright">© {{ now.Format "2006" }} {{ site.Title }}</p>
   </div>
