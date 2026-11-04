@@ -1,7 +1,7 @@
 baseURL = "https://dharma-library.pages.dev/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh"
-title = "佛法共学文库"
+title = "白话佛法"
 enableRobotsTXT = true
 summaryLength = 80
 
@@ -9,7 +9,7 @@ summaryLength = 80
   pagerSize = 20
 
 [params]
-  description = "只读的佛法共学文库：经论导读、实修笔记、问答存档。"
+  description = ""
   author = "编辑部"
   email = "hello@example.org"
   startYear = 2026
