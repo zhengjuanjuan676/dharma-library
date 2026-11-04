@@ -1,0 +1,22 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+</header>
+
+<div id="search" class="search-box" data-pagefind-ignore></div>
+
+<link rel="stylesheet" href="{{ "pagefind/pagefind-ui.css" | relURL }}">
+<script src="{{ "pagefind/pagefind-ui.js" | relURL }}"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (window.PagefindUI) {
+      new PagefindUI({
+        element: '#search',
+        showSubResults: true,
+        translations: { placeholder: '搜索文章…' }
+      });
+    }
+  });
+</script>
+{{ end }}

@@ -1,0 +1,27 @@
+baseURL = "https://example.org/"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh"
+title = "佛法共学文库"
+enableRobotsTXT = true
+summaryLength = 80
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  description = "只读的佛法共学文库：经论导读、实修笔记、问答存档。"
+  author = "编辑部"
+  email = "hello@example.org"
+  startYear = 2026
+
+[taxonomies]
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+  [markup.goldmark.renderer]
+    unsafe = false

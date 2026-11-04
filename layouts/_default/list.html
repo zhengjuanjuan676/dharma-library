@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="page-head">
+  <h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+</header>
+
+{{ with .Content }}
+<div class="prose page-intro">{{ . }}</div>
+{{ end }}
+
+{{ $pages := .Pages.ByLastmod.Reverse }}
+{{ $paginator := .Paginate $pages 20 }}
+
+<div class="library-list">
+  {{ range $paginator.Pages }}
+    {{ partial "article-row.html" . }}
+  {{ else }}
+    <p class="empty">这里还没有文章。</p>
+  {{ end }}
+</div>
+
+{{ partial "pagination.html" . }}
+{{ end }}

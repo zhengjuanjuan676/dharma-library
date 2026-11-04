@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ $label := "标签" }}
+{{ if eq .Data.Plural "series" }}{{ $label = "系列" }}{{ end }}
+
+<header class="page-head">
+  <h1>{{ $label }}</h1>
+  {{ with .Content }}<p class="lede">{{ . | plainify }}</p>{{ end }}
+</header>
+
+<div class="tag-cloud">
+  {{ range .Pages.ByTitle }}
+    <a href="{{ .RelPermalink }}">{{ .Title }} <span>{{ len .Pages }}</span></a>
+  {{ else }}
+    <p class="empty">还没有标签。</p>
+  {{ end }}
+</div>
+{{ end }}

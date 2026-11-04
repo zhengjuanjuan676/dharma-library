@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-brand">{{ site.Title }}</p>
+      <p class="footer-note">本站为只读文库，不设注册与回复。内容仅供学习参考，不构成医疗、心理、法律建议。</p>
+    </div>
+    <div class="footer-links">
+      <a href="{{ "index.xml" | relURL }}">RSS</a>
+      <a href="{{ "guanyu/" | relURL }}">关于</a>
+      <a href="{{ "tags/" | relURL }}">标签</a>
+      {{ with site.Params.email }}<a href="mailto:{{ . }}">来信</a>{{ end }}
+    </div>
+    <p class="copyright">© {{ now.Format "2006" }} {{ site.Title }}</p>
+  </div>
+</footer>
