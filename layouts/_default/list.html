@@ -9,7 +9,7 @@
 {{ end }}
 
 {{ $pages := .Pages.ByLastmod.Reverse }}
-{{ $paginator := .Paginate $pages 20 }}
+{{ $paginator := .Paginate $pages 50 }}
 
 <div class="library-list">
   {{ range $paginator.Pages }}
