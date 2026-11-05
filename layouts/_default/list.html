@@ -8,7 +8,7 @@
 <div class="prose page-intro">{{ . }}</div>
 {{ end }}
 
-{{ $pages := .Pages.ByLastmod.Reverse }}
+{{ $pages := .Pages.ByWeight }}
 {{ $paginator := .Paginate $pages 50 }}
 
 <div class="library-list">
