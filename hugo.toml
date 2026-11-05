@@ -6,7 +6,7 @@ enableRobotsTXT = true
 summaryLength = 80
 
 [pagination]
-  pagerSize = 20
+  pagerSize = 50
 
 [params]
   description = ""
