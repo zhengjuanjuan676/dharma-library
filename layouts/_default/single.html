@@ -56,21 +56,5 @@
 {{ end }}
     </nav>
   </footer>
-
-  {{ $page := . }}
-  {{ with .Params.tags }}
-    {{ $related := where site.RegularPages "Params.tags" "intersect" . }}
-    {{ $related = $related | complement (slice $page) }}
-    {{ if gt (len $related) 0 }}
-    <section class="related" aria-labelledby="related-title">
-      <h2 id="related-title">延伸阅读</h2>
-      <div class="library-list">
-        {{ range first 4 $related }}
-          {{ partial "article-row.html" . }}
-        {{ end }}
-      </div>
-    </section>
-    {{ end }}
-  {{ end }}
 </article>
 {{ end }}
