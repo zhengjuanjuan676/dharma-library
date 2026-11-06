@@ -41,18 +41,19 @@
     {{ end }}
 
     <nav class="prev-next" aria-label="上一篇和下一篇">
-      {{ with .PrevInSection }}
-      <a class="prev" href="{{ .RelPermalink }}">
-        <span>上一篇</span>
-        {{ .Title }}
-      </a>
-      {{ end }}
       {{ with .NextInSection }}
-      <a class="next" href="{{ .RelPermalink }}">
-        <span>下一篇</span>
-        {{ .Title }}
-      </a>
-      {{ end }}
+<a class="prev" href="{{ .RelPermalink }}">
+  <span>上一篇</span>
+  {{ .Title }}
+</a>
+{{ end }}
+
+{{ with .PrevInSection }}
+<a class="next" href="{{ .RelPermalink }}">
+  <span>下一篇</span>
+  {{ .Title }}
+</a>
+{{ end }}
     </nav>
   </footer>
 
