@@ -9,7 +9,7 @@
 {{ end }}
 
 {{ $pages := .Pages.ByWeight }}
-{{ $paginator := .Paginate $pages 50 }}
+{{ $paginator := .Paginate $pages 60 }}
 
 <div class="library-list">
   {{ range $paginator.Pages }}
