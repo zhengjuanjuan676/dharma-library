@@ -1,9 +1,6 @@
 {{ define "main" }}
 <section class="sections" aria-labelledby="sections-title">
-  <div class="section-head">
-    <h2 id="sections-title">版块</h2>
-    <p></p>
-  </div>
+ 
   <div class="section-grid">
     {{ range site.Sections.ByWeight }}
       {{ if ne .Section "guanyu" }}
