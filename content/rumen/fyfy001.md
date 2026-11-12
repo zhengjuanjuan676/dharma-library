@@ -1,7 +1,7 @@
 ---
-title: "44、佛言佛语 第一册"
+title: "佛言佛语 第一册"
 date: 2026-11-05
-weight: 7
+weight: 44
 tags: ["第一册"]
 series: []
 author: ""
