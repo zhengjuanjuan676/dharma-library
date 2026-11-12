@@ -13,7 +13,7 @@ summaryLength = 80
   author = "编辑部"
   email = "hello@example.org"
   startYear = 2026
-
+  mainSections = ["baihua", "guangbo", "shipin"]
 [taxonomies]
   tag = "tags"
   series = "series"
@@ -24,4 +24,4 @@ summaryLength = 80
     endLevel = 3
     ordered = false
   [markup.goldmark.renderer]
-    unsafe = false
+    unsafe = true
