@@ -6,14 +6,12 @@
     </a>
 
     <nav class="nav" aria-label="主导航">
-      {{ range site.Sections.ByWeight }}
-        {{ if ne .Section "guanyu" }}
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        {{ end }}
-      {{ end }}
-    
-      <a href="{{ "search/" | relURL }}">搜索</a>
-    </nav>
+  <a href="{{ "baihua/" | relURL }}">白话十二册</a>
+  <a href="{{ "guangbo/" | relURL }}">广播讲座</a>
+  <a href="{{ "shipin/" | relURL }}">视频白话</a>
+  <a href="{{ "guanyu/" | relURL }}">关于</a>
+  <a href="{{ "search/" | relURL }}">搜索</a>
+</nav>
 
     <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深浅色" title="切换深浅色">
       <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
