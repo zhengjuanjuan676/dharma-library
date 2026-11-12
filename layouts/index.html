@@ -8,7 +8,7 @@
         <span class="section-index">{{ printf "%02d" .Weight }}</span>
         <h3>{{ .Title }}</h3>
         <p>{{ .Description | default (.Summary | plainify) | truncate 80 }}</p>
-        <span class="section-count">{{ len .RegularPages }} 篇</span>
+        <span class="section-count">{{ len .RegularPagesRecursive }} 篇</span>
       </a>
       {{ end }}
     {{ end }}
